@@ -37,7 +37,7 @@ def period_finding_attack(N, max_tries=20):
         a = random.randint(2, N - 2)
         g = math.gcd(a, N)
         if g != 1:
-            # lucky accident: a itself shares a factor with N
+            # 'a' itself shares a factor with N
             print(f"Attempt {attempt+1}: a={a} shares a factor with N directly")
             return g, N // g
 
